@@ -11,4 +11,4 @@ describe("#tail: returns everything except the first item", () => {
     const result = tail(["Hello", "Lighthouse", "Labs"]);
     assert.deepEqual(result, ['Lighthouse', 'Labs']);
   });
-});
+}); 
