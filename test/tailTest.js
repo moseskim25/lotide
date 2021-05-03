@@ -1,12 +1,14 @@
-const assertEqual = require('../assertEqual');
-const tail = require('../tail');
+const tail = require("../tail");
+const assert = require("chai").assert;
 
-const result = tail(["Hello", "Lighthouse", "Labs"]);
-assertEqual(result.length, 2);
-assertEqual(result[0], "Lighthouse");
-assertEqual(result[1], "Labs");
+describe("#tail: returns everything except the first item", () => {
+  it("Inputting ['Hello', 'Lighthouse', 'Labs'] should return an array with length 2", () => {
+    const result = tail(["Hello", "Lighthouse", "Labs"]).length;
+    assert.strictEqual(result, 2);
+  });
 
-// Test Case: Check the original array
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words); // no need to capture the return value since we are not checking it
-assertEqual(words.length, 3); // original array should still have 3 elements!
+  it("Inputting ['Hello', 'Lighthouse', 'Labs'] should return ['Lighthouse', 'Labs']", () => {
+    const result = tail(["Hello", "Lighthouse", "Labs"]);
+    assert.deepEqual(result, ['Lighthouse', 'Labs']);
+  });
+});
