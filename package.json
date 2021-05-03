@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@moseskim/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "Includes various array manipulation functions and tests",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -22,5 +22,8 @@
   "devDependencies": {
     "chai": "^4.3.4",
     "mocha": "^8.3.2"
+  },
+  "dependencies": {
+    "my-package": "0.0.0"
   }
 }
