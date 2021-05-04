@@ -1,6 +1,6 @@
 {
   "name": "@moseskim/lotide",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Includes various array manipulation functions and tests",
   "main": "assertArraysEqual.js",
   "directories": {
